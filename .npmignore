@@ -1,0 +1,17 @@
+/.*
+/Packages
+/bin
+
+/build
+/roblox
+
+/*.json
+/*.toml
+/*.yml
+/*.md
+/*.tgz
+
+**/.robloxrc
+**/__tests__
+**/*.spec.lua
+**/jest.config.lua

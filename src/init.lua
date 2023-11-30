@@ -1,4 +1,4 @@
-local RegExp = require(script["Regexp.global"])
+local RegExp = require("./Regexp.global.lua")
 
 export type RegExp = RegExp.RegExp
 

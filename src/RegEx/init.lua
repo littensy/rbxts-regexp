@@ -43,9 +43,9 @@ local options = {
 };
 
 --
-local u_categories = options.unicodeData and require(script:WaitForChild("_unicodechar_category"));
-local chr_scripts = options.unicodeData and require(script:WaitForChild("_scripts"));
-local xuc_chr = options.unicodeData and require(script:WaitForChild("_xuc"));
+local u_categories = options.unicodeData -- and require('./_unicodechar_category');
+local chr_scripts = options.unicodeData -- and require('./_scripts');
+local xuc_chr = options.unicodeData -- and require('./_xuc');
 local proxy = setmetatable({ }, { __mode = 'k' });
 local re, re_m, match_m = { }, { }, { };
 local lockmsg;

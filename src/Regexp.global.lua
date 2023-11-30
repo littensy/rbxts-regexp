@@ -1,4 +1,4 @@
-local RegEx = require(script.Parent.RegEx)
+local RegEx = require('./RegEx')
 type Array<T> = { [number]: T }
 
 type RegExpExecArray = Array<string> & { index: number?, input: string?, n: number }
