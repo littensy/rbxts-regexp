@@ -1,10 +1,8 @@
 return function()
-	local RegExpModule = script.Parent.Parent
-	local RegExp = require(RegExpModule)
+	local RegExp = require("../init")
 	type RegExp = RegExp.RegExp
 
-	local Packages = RegExpModule.Parent
-	local JestGlobals = require(Packages.Dev.JestGlobals)
+	local JestGlobals = (require)("@pkg/@jsdotlua/jest-globals")
 	local jestExpect = JestGlobals.expect
 
 	-- deviation: since we can't have `nil` values in list-like
