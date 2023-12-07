@@ -1,0 +1,21 @@
+{
+  "name": "luau-regexp",
+  "version": "0.2.1",
+  "license": "MIT",
+  "main": "src/init.lua",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdotlua/luau-regexp.git"
+  },
+  "scripts": {
+    "prepare": "npmluau",
+    "build-assets": "sh ./bin/build-assets.sh",
+    "lint": "selene src/init.lua src/__tests__",
+    "format": "stylua src/init.lua src/__tests__ ",
+    "style-check": "stylua src/init.lua src/__tests__ --check"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "npmluau": "^0.1.0"
+  }
+}

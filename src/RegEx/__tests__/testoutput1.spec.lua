@@ -1,8 +1,7 @@
 return function()
-	local __tests__ = script.Parent
-	local testData = require(__tests__["testoutput1.gen"])
-	local escapeString = require(__tests__.escapeString)
-	local RegEx = require(__tests__.Parent)
+	local testData = require("./testoutput1.gen.lua")
+	local escapeString = require('./escapeString')
+	local RegEx = require('../init')
 
 	local function shortenIfTooLong(str)
 		if str:len() > 80 then

@@ -1,11 +1,9 @@
 return function()
-	local RegExpModule = script.Parent.Parent
-	local RegExp = require(RegExpModule)
+	local RegExp = require("../init")
 
-	local Packages = RegExpModule.Parent
-	local LuauPolyfill = require(Packages.Dev.LuauPolyfill)
+	local LuauPolyfill = (require)("@pkg/@jsdotlua/luau-polyfill")
 	local instanceof = LuauPolyfill.instanceof
-	local JestGlobals = require(Packages.Dev.JestGlobals)
+	local JestGlobals = (require)("@pkg/@jsdotlua/jest-globals")
 	local jestExpect = JestGlobals.expect
 
 	describe("ignoreCase", function()
