@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/regexp",
-	"version": "0.2.1-ts.2",
+	"version": "0.2.1-ts.3",
 	"license": "MIT",
 	"main": "build/wally/src/init.lua",
 	"types": "build/wally/src/index.d.ts",
