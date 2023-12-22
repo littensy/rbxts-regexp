@@ -8,7 +8,7 @@ rm -rf build/wally
 
 mkdir -p build/wally
 
-cp -r src/ build/wally
+cp -r src/ build/wally/src
 
 ./bin/remove-tests.sh build/wally/src
 

@@ -1,9 +1,9 @@
 {
 	"name": "@rbxts/regexp",
-	"version": "0.2.1-ts.1",
+	"version": "0.2.1-ts.2",
 	"license": "MIT",
-	"main": "src/init.lua",
-	"types": "src/index.d.ts",
+	"main": "build/wally/src/init.lua",
+	"types": "build/wally/src/index.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/jsdotlua/luau-regexp.git"
@@ -13,7 +13,8 @@
 		"build-assets": "sh ./bin/build-assets.sh",
 		"lint": "selene src/init.lua src/__tests__",
 		"format": "stylua src/init.lua src/__tests__ ",
-		"style-check": "stylua src/init.lua src/__tests__ --check"
+		"style-check": "stylua src/init.lua src/__tests__ --check",
+		"prepublishOnly": "sh ./bin/build-wally-package.sh"
 	},
 	"publishConfig": {
 		"access": "public"
