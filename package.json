@@ -1,21 +1,36 @@
 {
-  "name": "luau-regexp",
-  "version": "0.2.1",
-  "license": "MIT",
-  "main": "src/init.lua",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jsdotlua/luau-regexp.git"
-  },
-  "scripts": {
-    "prepare": "npmluau",
-    "build-assets": "sh ./bin/build-assets.sh",
-    "lint": "selene src/init.lua src/__tests__",
-    "format": "stylua src/init.lua src/__tests__ ",
-    "style-check": "stylua src/init.lua src/__tests__ --check"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "npmluau": "^0.1.0"
-  }
+	"name": "@rbxts/regexp",
+	"version": "0.2.1-ts.0",
+	"license": "MIT",
+	"main": "src/init.lua",
+	"types": "src/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jsdotlua/luau-regexp.git"
+	},
+	"scripts": {
+		"prepare": "npmluau",
+		"build-assets": "sh ./bin/build-assets.sh",
+		"lint": "selene src/init.lua src/__tests__",
+		"format": "stylua src/init.lua src/__tests__ ",
+		"style-check": "stylua src/init.lua src/__tests__ --check"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@rbxts/compiler-types": "^2.2.0-types.0",
+		"@rbxts/types": "^1.0.734",
+		"@typescript-eslint/eslint-plugin": "^6.13.1",
+		"@typescript-eslint/parser": "^6.13.1",
+		"eslint": "^8.54.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"eslint-plugin-roblox-ts": "^0.0.36",
+		"npmluau": "^0.1.0",
+		"prettier": "^3.1.0",
+		"roblox-ts": "^2.2.0",
+		"typescript": "~5.2.2"
+	}
 }

@@ -1,6 +1,6 @@
 {
-  "name": "RobloxLuauRegExp",
-  "tree": {
-    "$path": "src"
-  }
+	"name": "RegExp",
+	"tree": {
+		"$path": "src"
+	}
 }
