@@ -1,6 +1,6 @@
 {
 	"name": "RegExp",
 	"tree": {
-		"$path": "src"
+		"$path": "build/wally/src"
 	}
 }
